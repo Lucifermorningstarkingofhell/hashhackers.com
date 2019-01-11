@@ -1,0 +1,113 @@
+# Hugo variables
+#
+baseurl = "https://www.hashhackers.com/"
+languageCode = "en-us"
+title = "Hash Hackers - Tools of Internet, Solutions and Software Downloads"
+sitename = "Hash Hackers"
+theme = "hugo-phlat-theme"
+
+[blackfriday] 
+    hrefTargetBlank = true
+
+[permalinks]
+    post                = "/posts/:slug/"
+    page                = "/:slug/"
+
+[taxonomies]
+    tag                 = "tags"
+    category            = "categories"
+
+# The header menu will appear as an inline-list at the top right of the page
+[[menu.header]]
+    name                = "Home"
+    weight              = 1
+    url                 = "/"
+
+[[menu.header]]
+    name                = "Deals"
+    weight              = 2
+    url                 = "https://market.hashhackers.com"
+    
+[[menu.header]]
+    name                = "Hash Apps"
+    weight              = 2
+    url                 = "https://apps.hashhackers.com"
+
+[[menu.header]]
+    name                = "Downloads"
+    weight              = 2
+    url                 = "/categories/downloads/"
+
+[[menu.header]]
+    name                = "Docs"
+    weight              = 2
+    url                 = "/categories/documentation/"
+
+[[menu.header]]
+    name                = "Contact"
+    weight              = 3
+    url                 = "/contact/"
+
+# The footer menu will appear as an inline-list at the bottom left of the footer found at the bottom of the screen
+[[menu.footer]]
+    name                = "Privacy Policy"
+    weight              = 1
+    url                 = "/privacy-policy/"
+
+[[menu.footer]]
+    name                = "About"
+    weight              = 3
+    url                 = "/about/"
+
+[[menu.footer]]
+    name                = "Contact"
+    weight              = 3
+    url                 = "/contact/"
+
+[params]
+    logo_url            = "/images/logo.png"
+    # use value for width="" and height=""
+    logo_width          = "200px"
+    logo_height         = "auto"
+    keywords            = ["hash", "hashhackers", "hash hackers", "wordpress downloads", "software tutorials", "hashhackers.com"]
+    description         = "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's."
+    google_analytics    = "UA-104532450-1"
+    google_adsense      = "ca-pub-5435553179213419"
+    # Ad Slots
+    ga_ad_300x250       = "8034937081"
+    ga_ad_300x600       = "4397871598"
+    ga_before_post      = "2455920374"
+    ga_after_post       = "9448225207"
+    ga_in_feed          = "4869069875"
+    ga_in_feed_layout   = "-gn-9+54-75-4e"
+    ga_link_ads         = "6842951932"
+    ga_matched          = "8506185682"
+    disqus              = "hashhackers"
+    google_webmaster    = "ndr-W5ejhE32J1UcfcVATaaqGwnSo1vztNhbcRzr03o"
+    bing_webmaster      = ""
+    alexa               = ""
+    favicon             = "/images/favicon.ico"
+    author              = "Parveen Bhadoo"
+    cloudinary_url      = "https://www.hashhackers.com"
+    footer              = "PBG WorldWide Media"
+    url                 = "https://www.hashhackers.com"
+    sitecodename        = "Hash Hackers"
+    # //Code for Sharethis.com Website
+    sharethiscode       = "5b8e052b59ed1f001188b217" 
+    facebookappid       = "2045292318877109"
+
+# Social media icons and links that appear in the footer
+[social]
+    # //twitter username without @
+    twittersite         = "pbgworldwide" 
+    # //twitter username without @
+    twitteruser         = "parveenbhadoo"
+    # enter full url's including http or https
+    facebook			= "https://www.facebook.com/PBGWorldWide"
+    twitter             = "https://www.twitter.com/PBGWorldWide"
+    googleplus          = "https://plus.google.com/+ParveenBhadoo"
+    youtube             = "https://www.youtube.com/parveenbhadoo"
+    paypal              = "https://paypal.me/Factoogle"
+    instagram           = "https://www.instagram.com/PBGWorldWideMedia"
+    reddit              = ""
+    email               = "mailto:support@hashhackers.com"

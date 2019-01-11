@@ -1,0 +1,44 @@
+<header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-brand navbar-left">
+      <li>
+      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{ .Site.Params.logo_url }}" alt="{{.Site.Title}}" width="{{ .Site.Params.logo_width }}" height="{{ .Site.Params.logo_height }}"></a>
+      </li>
+      </ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="//www.hashhackers.com">Home</a></li>
+        <li><a href="//market.hashhackers.com">Deals</a></li>
+        <li><a href="//www.hashhackers.com/categories/documentation/">Docs</a></li>
+        <li><a href="//apps.hashhackers.com">Apps</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="//www.hashhackers.com/categories/documentation/">Docs</a></li>
+            <li><a href="//www.hashhackers.com/categories/downloads/">Downloads</a></li>
+            <li><a href="//www.hashhackers.com/categories/internet/">Internet</a></li>
+            <li><a href="//www.hashhackers.com/categories/tips-and-tricks/">Tips Tricks</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="//support.hashhackers.com/privacy">Privacy Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="//support.hashhackers.com">Contact</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>

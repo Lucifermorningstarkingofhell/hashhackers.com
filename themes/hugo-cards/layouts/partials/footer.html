@@ -1,0 +1,29 @@
+<footer>
+    <div class="container">
+        <div class="row p20">
+                <div class="col-md-4 text-center mt25">© 1996-2019 PBG WorldWide Media</div>
+<div class="col-md-4 text-center mt25">
+
+  <a href="//support.hashhackers.com/privacy/">Privacy Policy and Terms of Use</a>
+</div>
+            <div class="col-md-4 text-center mt25">
+               {{ with .Site.Params.facebook }}
+                <a target="_blank" href="{{.}}"><li class="social facebook"><i class="fa fa-facebook-square"></i></li></a>
+                {{ end }}
+               {{with  .Site.Params.quora }}
+                <a target="_blank" href="{{.}}"><li class="social quora"><i class="fa fa-quora"></i></li></a>
+                {{ end }}
+               {{with  .Site.Params.twitter }}
+                <a target="_blank" href="{{.}}"><li class="social twitter"><i class="fa fa-twitter-square"></i></li></a>
+                {{ end }}
+               {{with  .Site.Params.github }}
+                <a target="_blank" href="{{.}}"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                {{ end }}
+               {{with  .Site.Params.email }}
+                <a target="_blank" href="mailto:{{.}}"><li class="social email"><i class="fa fa-envelope"></i></li></a>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+</footer>

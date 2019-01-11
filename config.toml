@@ -1,0 +1,63 @@
+name = "Tools of Internet, Solutions and Software Downloads"
+description = "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's."
+homepage = "https://www.hashhackers.com/"
+tags = ["hash", "hashhackers", "hash hackers", "wordpress downloads", "software tutorials", "hashhackers.com"]
+features = []
+theme = "hugo-cards"
+baseurl = "https://www.hashhackers.com/"
+languageCode = "en-us"
+title = "Tools of Internet, Solutions and Software Downloads"
+sitename = "Tools of Internet, Solutions and Software Downloads"
+paginate = 45
+
+[blackfriday]
+    hrefTargetBlank = true
+
+[author]
+  name = "Parveen Bhadoo"
+  homepage = "https://www.parveenbhadoo.com"
+
+[params]
+  logo_url            = "/images/logo.png"
+  # use value for width="" and height=""
+  logo_width          = "200px"
+  logo_height         = "auto"
+  BaseURL             = "https://www.hashhackers.com/"
+  images              = "/images/hashhackersbanner-min.jpg"
+  keywords            = ["hash", "hashhackers", "hash hackers", "wordpress downloads", "software tutorials", "hashhackers.com"]
+  description         = "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's."
+  google_analytics    = "UA-104532450-1"
+  google_adsense      = "ca-pub-5435553179213419"
+  # Ad Slots
+  ga_ad_300x250       = "8034937081"
+  ga_ad_300x600       = "4397871598"
+  ga_before_post      = "2455920374"
+  ga_after_post       = "9448225207"
+  ga_in_feed          = "4869069875"
+  ga_in_feed_layout   = "-gn-9+54-75-4e"
+  ga_link_ads         = "6842951932"
+  ga_matched          = "8506185682"
+  disqus              = "hashhackers"
+  google_webmaster    = "ndr-W5ejhE32J1UcfcVATaaqGwnSo1vztNhbcRzr03o"
+  bing_webmaster      = ""
+  alexa               = ""
+  favicon             = "/images/favicon.ico"
+  author              = "Parveen Bhadoo"
+  cloudinary_url      = "https://www.hashhackers.com"
+  footer              = "PBG WorldWide Media"
+  url                 = "https://www.hashhackers.com"
+  sitecodename        = "Hash Hackers"
+  # //Code for Sharethis.com Website
+  sharethiscode       = "5b8e052b59ed1f001188b217"
+  facebookappid       = "2045292318877109"
+  facebook            = "https://www.facebook.com/PBGWorldWide"
+  twitter             = "https://www.twitter.com/PBGWorldWide"
+  googleplus          = "https://plus.google.com/+ParveenBhadoo"
+  youtube             = "https://www.youtube.com/parveenbhadoo"
+  paypal              = "https://paypal.me/Factoogle"
+  instagram           = "https://www.instagram.com/PBGWorldWideMedia"
+  github              = "https://www.github.com/ParveenBhadooOfficial"
+  reddit              = ""
+  email               = "support@HashHackers.com"
+  pinterest           = ""
+  wordpress           = ""
