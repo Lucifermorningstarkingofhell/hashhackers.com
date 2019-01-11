@@ -1,0 +1,9 @@
+# Redirect domain aliases to primary domain
+https://tricksnetwork.net/* https://www.hashhackers.com/:splat 301!
+https://www.tricksnetwork.net/* https://www.hashhackers.com/:splat 301!
+https://tricksbystg.net/* https://www.hashhackers.com/:splat 301!
+https://www.tricksbystg.net/* https://www.hashhackers.com/:splat 301!
+https://ssl.aaina-corporation.automatic.hashhackers.com/* https://www.hashhackers.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://hashhackers.netlify.com/* https://www.hashhackers.com/:splat 301!
