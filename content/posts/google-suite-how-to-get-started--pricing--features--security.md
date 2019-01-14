@@ -2,7 +2,6 @@
 categories = ["Internet", "Documentation"]
 date = "2019-01-11T18:30:00+00:00"
 description = "Get Started with G Suite for Custom Email with Google, Try Google Suite for 14 Days with Full Features."
-draft = true
 images = "/images/gsuite.png"
 tags = []
 title = "Google Suite: How to get started | Pricing | Features | Security"
