@@ -46,3 +46,5 @@ G Suite is a brand of cloud computing, productivity and collaboration tools, sof
 Google Promotional Code Offers Discounts on G Suite for first 12 Months, Send us an email to get a Free Promotional Code.
 
 [Send an Email from Here](https://support.hashhackers.com)
+
+[Setup G Suite Domain and DNS Here](/posts/all-dns-records-and-settings-for-google-suite-domain)
