@@ -27,3 +27,5 @@ fields:
   name: tags
   label: Tags
   description: Multiple Allowed
+pages:
+- content/posts/google-suite-how-to-get-started--pricing--features--security.md
