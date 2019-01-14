@@ -2,9 +2,8 @@
 categories = ["Internet", "Documentation"]
 date = "2019-01-13T09:03:00+00:00"
 description = "Detailed Documentaion for Google Suite Domain Verification, MX Records Settings, Setting up Authentication for Sending Emails (SPF), DKIM DNS Records for Domain Spam Proof, Sub Domain DNS Records"
-draft = true
 images = "/images/gsuite.png"
-tags = ["Google Suite"]
+tags = ["Google Suite", "G Suite", "Google Apps for Work", "Setup G Suite", "DMARC", "SPF Records"]
 title = "All DNS Records and Settings for Google Suite Domain"
 
 +++
@@ -125,4 +124,30 @@ Domain Verification is needed to make sure the domain which is being used at Goo
 ### Adding DMARC Record
 
 * DMARC Records are used to Prevent Spams. [Read More](https://support.google.com/a/answer/2466580?hl=en).
-* 
+* The Basic DMARC Record is given below
+
+    host:  _dmarc
+
+* For no action on spams
+
+    value: v=DMARC1; p=none
+
+* For quarantine spams
+
+    v=DMARC1; p=quarantine
+
+* For Blocking spams
+
+    v=DMARC1; p=reject
+
+* You can also add your email to receive reports of quarantine or blocked spams using **rua=mailto:username@domain.com** and it may looks like this.
+
+    v=DMARC1; p=reject; rua=mailto:username@domain.com
+
+### Email using Sub Domains
+
+* To use subdomain just add your subdomain prefix like for sub.domain.com just use sub after the host value. eg.
+
+    host for DMARC: _dmarc.sub
+
+If you have questions feel free to comment below.
