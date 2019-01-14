@@ -11,7 +11,7 @@ G Suite is a cloud-based business suite from Google which is targeted for smooth
 
 G Suite is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google.
 
-Click Here to Read Article to Sign Up at G Suite
+[Click Here to Read Article to Sign Up at G Suite](/posts/google-suite-how-to-get-started-pricing-features-security/ "Signup for G Suite")
 
 ## Scope of Article
 
