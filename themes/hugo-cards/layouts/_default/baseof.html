@@ -56,6 +56,7 @@
 {{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
 <link rel="stylesheet" href="{{ $main.RelPermalink }}">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/ad.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
@@ -72,7 +73,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/custom.js"></script>
         {{ with .Site.Params.google_adsense }}
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script>
