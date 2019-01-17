@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ .Title }} - {{ .Site.Params.sitecodename}}</title>
-{{ with .Site.Params.bing_webmaster }}
-<meta name="msvalidate.01" content="{{ . }}" />
-{{ end }}
-{{ with .Site.Params.google_webmaster }}
-<meta name="google-site-verification" content="{{ . }}" />
-{{ end }}
-{{ with .Site.Params.alexa }}
-<meta name="alexaVerifyID" content="{{ . }}" />
-{{ end }}
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@pbgworldwide">
-<meta name="twitter:creator" content="@parveenbhadoo" />
-<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
-{{ if .Params.images }}
-<meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}">
-{{else}}
-<meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}">
-{{ end }}
-<meta name="twitter:image:alt" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit (.Site.Params.keywords | default "") "," }}{{ end }}' />
-{{ with .Site.Params.author }}
-<meta name="author" content="{{ . }}" />
-<meta property="fb:app_id" content="{{ $.Site.Params.facebookappid}}" />
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="//s7.addthis.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} - {{ .Site.Params.sitecodename}}</title>
+    {{ with .Site.Params.bing_webmaster }}
+    <meta name="msvalidate.01" content="{{ . }}" />
     {{ end }}
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}" />
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitecodename}}" />
-{{ if .Params.images }}
-<meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}" />
-<meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}"/>
-<meta property="og:image:width" content="542" />
-<meta property="og:image:height" content="325" />
-{{else}}
-<meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}" />
-<meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}"/>
-<meta property="og:image:width" content="542" />
-<meta property="og:image:height" content="325" />
-{{ end }}
-{{ with .Site.Params.favicon }}
-<link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />
-{{ end }}
-<link href="{{ .Site.Params.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ with .Site.Params.google_webmaster }}
+    <meta name="google-site-verification" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.alexa }}
+    <meta name="alexaVerifyID" content="{{ . }}" />
+    {{ end }}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@pbgworldwide">
+    <meta name="twitter:creator" content="@parveenbhadoo" />
+    <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
+    {{ if .Params.images }}
+    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}">
+    {{else}}
+    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}">
+    {{ end }}
+    <meta name="twitter:image:alt" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit (.Site.Params.keywords | default "") "," }}{{ end }}' />
+    {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}" />
+    <meta property="fb:app_id" content="{{ $.Site.Params.facebookappid}}" />
+        {{ end }}
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}" />
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.sitecodename}}" />
+    {{ if .Params.images }}
+    <meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}" />
+    <meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}"/>
+    <meta property="og:image:width" content="542" />
+    <meta property="og:image:height" content="325" />
+    {{else}}
+    <meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}" />
+    <meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}"/>
+    <meta property="og:image:width" content="542" />
+    <meta property="og:image:height" content="325" />
+    {{ end }}
+    {{ with .Site.Params.favicon }}
+    <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />
+    {{ end }}
+    <link href="{{ .Site.Params.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
-{{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
-<link rel="stylesheet" href="{{ $main.RelPermalink }}">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/ad.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/ad.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
 
@@ -85,7 +89,7 @@
   {{ with .Site.Params.google_analytics }}
     {{ partial "analytics.html" . }}
   {{ end }}
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c2d974a2ba56a3b"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c2d974a2ba56a3b"></script>
   </body>
 
 </html>
