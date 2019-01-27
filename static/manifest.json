@@ -1,0 +1,22 @@
+{
+    "dir": "ltr",
+    "lang": "English",
+    "name": "Hash Hackers",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://www.hashhackers.com/",
+    "short_name": "HashHackers",
+    "theme_color": "transparent",
+    "description": "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's.",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/images/favicon.ico",
+            "sizes": "196x196",
+            "type": "image/x-icon"
+        }
+    ]
+}
