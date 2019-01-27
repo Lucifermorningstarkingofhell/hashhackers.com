@@ -6,7 +6,7 @@
     "display": "fullscreen",
     "start_url": "https://www.hashhackers.com/?utm_source=webapp",
     "short_name": "HashHackers",
-    "theme_color": "transparent",
+    "theme_color": "#63A3F2",
     "description": "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's.",
     "orientation": "any",
     "background_color": "transparent",
