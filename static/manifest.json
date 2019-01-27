@@ -16,7 +16,7 @@
         {
             "src": "/images/icon-196x196.png",
             "sizes": "196x196",
-            "type": "image/x-icon"
+            "type": "image/png"
         }
     ]
 }
