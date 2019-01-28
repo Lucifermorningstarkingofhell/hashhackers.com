@@ -9,17 +9,17 @@
     "theme_color": "#63A3F2",
     "description": "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's.",
     "orientation": "any",
-    "background_color": "#63A3F2",
+    "background_color": "#FFFFFF",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/images/icon-196x196.png",
+            "src": "/images/hashhackers-196x196.png",
             "sizes": "196x196",
             "type": "image/png"
         },
         {
-            "src": "/images/icon-512x512.png",
+            "src": "/images/hashhackers-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
