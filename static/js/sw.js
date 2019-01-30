@@ -1,7 +1,7 @@
 'use strict';
 
 const cacheName = 'hashhackerssw';
-const startPage = '/';
+const startPage = 'https://www.hashhackers.com/';
 const offlinePage = '/offline.html';
 const filesToCache = [startPage, offlinePage];
 const neverCacheUrls = [/\/admin/];
