@@ -9,7 +9,7 @@ sections:
   label: Posts
   create: documents
   match: posts/*
-  new_doc_ext: ''
+  new_doc_ext: '20190129202208'
   templates:
   - post
 - type: directory
