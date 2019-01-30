@@ -80,7 +80,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="lazyload.js" async=""></script>
+  <script src="/lazyload.js" async=""></script>
         {{ with .Site.Params.google_adsense }}
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script>
@@ -94,14 +94,7 @@
     {{ partial "analytics.html" . }}
   {{ end }}
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c2d974a2ba56a3b"></script>
-    <script type='text/javascript'>
-    /* <![CDATA[ */
-    var superpwa_sw = {"url":"\/sw.js"};
-    /* ]]> */
-    </script>
+    <script type='text/javascript'>var superpwa_sw = {"url":"\/sw.js"};</script>
     <script src="/sw-register.js"></script>
-<!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5405818.js"></script>
-<!-- End of HubSpot Embed Code -->
   </body>
 </html>
