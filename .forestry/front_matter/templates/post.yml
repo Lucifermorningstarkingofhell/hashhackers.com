@@ -16,9 +16,11 @@ fields:
 - type: textarea
   name: description
   label: Description
+  description: optional
 - type: file
   name: images
   label: Featured Image
+  description: Required
 - type: tag_list
   name: categories
   label: Categories
