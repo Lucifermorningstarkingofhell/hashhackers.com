@@ -2,7 +2,7 @@
     "dir": "ltr",
     "lang": "English",
     "name": "Hash Hackers",
-    "scope": "/",
+    "scope": "/*",
     "display": "fullscreen",
     "start_url": "https://www.hashhackers.com/?utm_source=webapp",
     "short_name": "HashHackers",
