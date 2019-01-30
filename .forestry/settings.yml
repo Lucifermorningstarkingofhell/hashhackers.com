@@ -9,7 +9,7 @@ sections:
   label: Posts
   create: documents
   match: posts/*
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - post
 - type: directory
@@ -17,11 +17,11 @@ sections:
   label: Pages
   create: documents
   match: "*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
