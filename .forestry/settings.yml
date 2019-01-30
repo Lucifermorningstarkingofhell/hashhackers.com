@@ -8,8 +8,8 @@ sections:
   path: content
   label: Posts
   create: documents
-  match: posts/*
-  new_doc_ext: '20190129202208'
+  match: "**/*"
+  new_doc_ext: ''
   templates:
   - post
 - type: directory
