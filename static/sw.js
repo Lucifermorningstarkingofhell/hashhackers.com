@@ -8,13 +8,13 @@ const neverCacheUrls = [/\/admin/];
 
 // Install
 self.addEventListener('install', function(e) {
-	console.log('BhadooSW Installed');
+	console.log('Hash Hackers Service worker installation');
 	e.waitUntil(
 		caches.open(cacheName).then(function(cache) {
-			console.log('BhadooSW Caching Dependencies');
+			console.log('Hash Hackers Service worker caching dependencies');
 			filesToCache.map(function(url) {
 				return cache.add(url).catch(function (reason) {
-					return console.log('BhadooSW : ' + String(reason) + ' ' + url);
+					return console.log('Hash Hackers SW: ' + String(reason) + ' ' + url);
 				});
 			});
 		})
@@ -23,7 +23,7 @@ self.addEventListener('install', function(e) {
 
 // Activate
 self.addEventListener('activate', function(e) {
-	console.log('BhadooSW Activation Successful');
+	console.log('Hash Hackers Service worker activation');
 	e.waitUntil(
 		caches.keys().then(function(keyList) {
 			return Promise.all(keyList.map(function(key) {
