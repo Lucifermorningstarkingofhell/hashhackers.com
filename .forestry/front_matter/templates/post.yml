@@ -29,5 +29,3 @@ fields:
   name: tags
   label: Tags
   description: Multiple Allowed
-pages:
-- content/status.md
