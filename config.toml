@@ -18,7 +18,7 @@ paginate = 45
   homepage = "https://www.parveenbhadoo.com"
 
 [params]
-  logo_url            = "/images/logo.png"
+  logo_url            = "/images/logo.webp"
   # use value for width="" and height=""
   logo_width          = "200px"
   logo_height         = "auto"
