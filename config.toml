@@ -18,7 +18,7 @@ paginate = 45
   homepage = "https://www.parveenbhadoo.com"
 
 [params]
-  logo_url            = "/images/logo.webp"
+  logo_url            = "//cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/images/hashhackers_logo.webp"
   # use value for width="" and height=""
   logo_width          = "200px"
   logo_height         = "auto"
@@ -41,7 +41,7 @@ paginate = 45
   google_webmaster    = "ndr-W5ejhE32J1UcfcVATaaqGwnSo1vztNhbcRzr03o"
   bing_webmaster      = ""
   alexa               = ""
-  favicon             = "https://www.hashhackers.com/images/favicon.ico"
+  favicon             = "//cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/favicon-16x16.png"
   author              = "Parveen Bhadoo"
   cloudinary_url      = "https://www.hashhackers.com"
   footer              = "PBG WorldWide Media"
