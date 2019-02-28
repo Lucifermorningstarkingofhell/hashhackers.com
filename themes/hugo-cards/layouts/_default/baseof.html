@@ -7,6 +7,7 @@
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
     <link rel="dns-prefetch" href="//ajax.googleapis.com" />
     <link rel="dns-prefetch" href="//s7.addthis.com" />
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#63A3F2"/>
@@ -61,9 +62,10 @@
 
     {{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
     <link rel="stylesheet" href="{{ $main.RelPermalink }}">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/ad.css">
-    <link rel="stylesheet" href="/css/search.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_style.css" integrity="sha256-L/ToXkg+o1lsq1l9W7Nb0vjk0OvCgLsjpvW2txAtAVM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_ad.css" integrity="sha256-1fk6A5FZOEQVWYpeMBiDoi4Ak9SOGlaC3ypZFer6XQk=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_search.css" integrity="sha256-0k6LfUSFmNttr6SJGlqOHDsqhq1MXFbO2DlogtZ4B40=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
@@ -79,8 +81,8 @@
     {{ partial "footer.html" . }}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/lazyload.js" async=""></script>
+  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_bootstrap.min.js" integrity="sha256-63ld7aiYP6UxBifJWEzz87ldJyVnETUABZAYs5Qcsmc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_lazyload.js" integrity="sha256-lc7iEbx1I9FaUO2/JkTO+/b+5WHoaGZ7QhodJsmPgbY=" crossorigin="anonymous"></script>
         {{ with .Site.Params.google_adsense }}
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script>
@@ -94,11 +96,8 @@
     {{ partial "analytics.html" . }}
   {{ end }}
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c2d974a2ba56a3b"></script>
-    <script type='text/javascript'>
-    /* <![CDATA[ */
-    var bhadoo_sw = {"url":"\/sw.js"};
-    /* ]]> */
+    <script type='text/javascript'>var bhadoo_sw = {"url":"\/sw.js"};
     </script>
-    <script src="/sw-register.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/service_workers/www.hashhackers.com-register.js" integrity="sha256-jhv10AMwxAODV93ZD8yQPjr6YHXpi6z7SWV/DmN+hXk=" crossorigin="anonymous"></script>
   </body>
 </html>
