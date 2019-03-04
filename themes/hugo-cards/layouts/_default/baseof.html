@@ -2,101 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#63A3F2"/>
+    <title>{{ .Title }} - {{ .Site.Params.sitecodename}}</title>{{ with .Site.Params.bing_webmaster }}
+    <meta name="msvalidate.01" content="{{ . }}" />{{ end }}{{ with .Site.Params.google_webmaster }}
     <link rel="manifest" href="/manifest.json"></link>
     <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com" />
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
     <link rel="dns-prefetch" href="//ajax.googleapis.com" />
     <link rel="dns-prefetch" href="//s7.addthis.com" />
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#63A3F2"/>
-    <title>{{ .Title }} - {{ .Site.Params.sitecodename}}</title>
-    {{ with .Site.Params.bing_webmaster }}
-    <meta name="msvalidate.01" content="{{ . }}" />
-    {{ end }}
-    {{ with .Site.Params.google_webmaster }}
-    <meta name="google-site-verification" content="{{ . }}" />
-    {{ end }}
-    {{ with .Site.Params.alexa }}
-    <meta name="alexaVerifyID" content="{{ . }}" />
-    {{ end }}
+    <meta name="google-site-verification" content="{{ . }}" />{{ end }}{{ with .Site.Params.alexa }}
+    <meta name="alexaVerifyID" content="{{ . }}" />{{ end }}
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@pbgworldwide">
     <meta name="twitter:creator" content="@parveenbhadoo" />
     <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
-    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
-    {{ if .Params.images }}
-    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}">
-    {{else}}
-    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}">
-    {{ end }}
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>{{ if .Params.images }}
+    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}">{{else}}
+    <meta name="twitter:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}">{{ end }}
     <meta name="twitter:image:alt" content="{{ .Title }} - {{ .Site.Params.sitecodename}}">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit (.Site.Params.keywords | default "") "," }}{{ end }}' />
-    {{ with .Site.Params.author }}
+    <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit (.Site.Params.keywords | default "") "," }}{{ end }}' />{{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}" />
-    <meta property="fb:app_id" content="{{ $.Site.Params.facebookappid}}" />
-        {{ end }}
+    <meta property="fb:app_id" content="{{ $.Site.Params.facebookappid}}" />{{ end }}
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Params.sitecodename}}" />
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:site_name" content="{{ .Site.Params.sitecodename}}" />
-    {{ if .Params.images }}
+    <meta property="og:site_name" content="{{ .Site.Params.sitecodename}}" />{{ if .Params.images }}
     <meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}" />
     <meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Params.images }}"/>
     <meta property="og:image:width" content="542" />
-    <meta property="og:image:height" content="325" />
-    {{else}}
+    <meta property="og:image:height" content="325" />{{else}}
     <meta property="og:image" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}" />
     <meta property="og:image:secure_url" content="{{ $.Site.Params.cloudinary_url}}{{ $.Site.Params.images }}"/>
     <meta property="og:image:width" content="542" />
-    <meta property="og:image:height" content="325" />
-    {{ end }}
-    {{ with .Site.Params.favicon }}
-    <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />
-    {{ end }}
-    <link href="{{ .Site.Params.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-<!--{{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
-    <link rel="stylesheet" href="{{ $main.RelPermalink }}">-->
+    <meta property="og:image:height" content="325" />{{ end }}{{ with .Site.Params.favicon }}
+    <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />{{ end }}
+    <link href="{{ .Site.Params.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /><!--{{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}<link rel="stylesheet" href="{{ $main.RelPermalink }}">-->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_style.css" integrity="sha256-L/ToXkg+o1lsq1l9W7Nb0vjk0OvCgLsjpvW2txAtAVM=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_ad.css" integrity="sha256-1fk6A5FZOEQVWYpeMBiDoi4Ak9SOGlaC3ypZFer6XQk=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_search.css" integrity="sha256-0k6LfUSFmNttr6SJGlqOHDsqhq1MXFbO2DlogtZ4B40=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/hashhackers.com/static/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
   <body>
-
     {{ partial "header.html" . }}
-
     <div class="container">
       <div class="wrapper">
         {{ block "main" . }} {{ end }}
       </div>
     </div>
-
     {{ partial "footer.html" . }}
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_bootstrap.min.js" integrity="sha256-63ld7aiYP6UxBifJWEzz87ldJyVnETUABZAYs5Qcsmc=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_lazyload.js" integrity="sha256-lc7iEbx1I9FaUO2/JkTO+/b+5WHoaGZ7QhodJsmPgbY=" crossorigin="anonymous"></script>
-        {{ with .Site.Params.google_adsense }}
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({
-                    google_ad_client: "{{ . }}",
-                    enable_page_level_ads: true
-                });
-            </script>
-        {{ end }}
-  {{ with .Site.Params.google_analytics }}
-    {{ partial "analytics.html" . }}
-  {{ end }}
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/hashhackers.com/static/jquery/1.12.2/jquery.min.js" integrity="sha384-o6l2EXLcx4A+q7ls2O2OP2Lb2W7iBgOsYvuuRI6G+Efbjbk6J4xbirJpHZZoHbfs" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_bootstrap.min.js" integrity="sha256-63ld7aiYP6UxBifJWEzz87ldJyVnETUABZAYs5Qcsmc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/js/www.hashhackers.com_lazyload.js" integrity="sha256-lc7iEbx1I9FaUO2/JkTO+/b+5WHoaGZ7QhodJsmPgbY=" crossorigin="anonymous"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/hashhackers.com/static/js/page-level-ads.min.js" integrity="sha384-p4OGR8vILXPyrL+ZoseQ83Ww0lhO+JBf8Ho4uvNGfnnBdnjjGmmQhxRodZ9L8izc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/hashhackers.com/static/js/track.min.js" integrity="sha384-dKZ1xTbX2y4HIKNEpD+SCqNNx2s7PxGm2Qp0qN6i08W842XLKysh5exYrhC0fW1r" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c2d974a2ba56a3b"></script>
-    <script type='text/javascript'>var bhadoo_sw = {"url":"\/sw.js"};
-    </script>
+    <script type='text/javascript'>var bhadoo_sw = {"url":"\/sw.js"};</script>
     <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/service_workers/www.hashhackers.com-register.js" integrity="sha256-jhv10AMwxAODV93ZD8yQPjr6YHXpi6z7SWV/DmN+hXk=" crossorigin="anonymous"></script>
   </body>
 </html>
