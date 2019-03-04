@@ -59,10 +59,9 @@
     <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />
     {{ end }}
     <link href="{{ .Site.Params.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-
-    {{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
-    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
-
+<!--{{ $main := resources.Get "/sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">-->
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_style.css" integrity="sha256-L/ToXkg+o1lsq1l9W7Nb0vjk0OvCgLsjpvW2txAtAVM=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_ad.css" integrity="sha256-1fk6A5FZOEQVWYpeMBiDoi4Ak9SOGlaC3ypZFer6XQk=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.10/css/www.hashhackers.com_search.css" integrity="sha256-0k6LfUSFmNttr6SJGlqOHDsqhq1MXFbO2DlogtZ4B40=" crossorigin="anonymous">
