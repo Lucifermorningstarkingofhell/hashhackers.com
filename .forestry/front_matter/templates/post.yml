@@ -29,3 +29,5 @@ fields:
   name: tags
   label: Tags
   description: Multiple Allowed
+pages:
+- content/posts/speeding-up-websites-using-world-s-fastest-cdn-for-free.md
