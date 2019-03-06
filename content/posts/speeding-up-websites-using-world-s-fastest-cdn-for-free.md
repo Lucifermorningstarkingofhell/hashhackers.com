@@ -31,19 +31,19 @@ Google Cloud CDN is a paid CDN but its cost effective but if we are talking abou
 * Upload your folders or files into the repository.
 * You will see your repository link be link this.
 
-    github.com/username/repo
+        github.com/username/repo
 
 * Where username will be replaced by your GitHub username and repo is your Repository name.
 * Click on the Releases button on the top of your Repository. Link will be link.
 
-    github.com/username/repo/releases
+        github.com/username/repo/releases
 
 * Draft a new release and give a version number eg. 1.0 or 1.0.1 or any you like, use numbers and no alphabets and the save your release.
 * Now your CDN will be available at jsDelivr after a few minutes you open the CDN URL. Your CDN url can be made using below syntax.
 
-    for github.com/username/repo use
+        for github.com/username/repo use
 
-    www.jsdelivr.com/package/gh/username/repo
+        www.jsdelivr.com/package/gh/username/repo
 
 * Where username and repo will be replaced by your GitHub username.
 
