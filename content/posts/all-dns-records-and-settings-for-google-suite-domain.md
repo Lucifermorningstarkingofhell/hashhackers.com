@@ -63,23 +63,23 @@ Domain Verification is needed to make sure the domain which is being used at Goo
 * Open DNS Settings for Your Domain.
 * Select Add a MX Record
   * Select Host as @ or subdomain (as applicable)
-  * In Value enter ASPMX.L.GOOGLE.COM
+  * In Value enter ```ASPMX.L.GOOGLE.COM```
   * In Priority enter 1
 * Add Another MX Record
   * Select Host as @ or subdomain (as applicable)
-  * In Value enter ALT1.ASPMX.L.GOOGLE.COM
+  * In Value enter ```ALT1.ASPMX.L.GOOGLE.COM```
   * In Priority enter 5
 * Add Another MX Record
   * Select Host as @ or subdomain (as applicable)
-  * In Value enter ALT2.ASPMX.L.GOOGLE.COM
+  * In Value enter ```ALT2.ASPMX.L.GOOGLE.COM```
   * In Priority enter 5
 * Add Another MX Record
   * Select Host as @ or subdomain (as applicable)
-  * In Value enter ALT3ASPMX.L.GOOGLE.COM
+  * In Value enter ```ALT3ASPMX.L.GOOGLE.COM```
   * In Priority enter 10
 * Add Another MX Record
   * Select Host as @ or subdomain (as applicable)
-  * In Value enter ALT4.ASPMX.L.GOOGLE.COM
+  * In Value enter ```ALT4.ASPMX.L.GOOGLE.COM```
   * In Priority enter 10
 * See All Values in Image Below.
 
@@ -106,7 +106,7 @@ Domain Verification is needed to make sure the domain which is being used at Goo
 * Select Host as given above code.
 * It should looks like below.
 
-  google._domainkey
+  ```google._domainkey```
 * In Value paste the big code copied from admin panel above.
 * and then go to above page and click on verify.
 * It will say Status: Authenticating email.
@@ -119,35 +119,35 @@ Domain Verification is needed to make sure the domain which is being used at Goo
 * Add Host as @ or subdomain (as applicable)
 * In Value Enter below value.
 
-  v=spf1 include:_spf.google.com \~all
+  ```v=spf1 include:_spf.google.com \~all```
 
 ### Adding DMARC Record
 
 * DMARC Records are used to Prevent Spams. [Read More](https://support.google.com/a/answer/2466580?hl=en).
 * The Basic DMARC Record is given below
 
-    host:  _dmarc
+    Host:```_dmarc```
 
 * For no action on spams
 
-    value: v=DMARC1; p=none
+   Value:```v=DMARC1; p=none```
 
 * For quarantine spams
 
-    v=DMARC1; p=quarantine
+    Value:```v=DMARC1; p=quarantine```
 
 * For Blocking spams
 
-    v=DMARC1; p=reject
+    Value:```v=DMARC1; p=reject```
 
 * You can also add your email to receive reports of quarantine or blocked spams using **rua=mailto:username@domain.com** and it may looks like this.
 
-    v=DMARC1; p=reject; rua=mailto:username@domain.com
+   Value:```v=DMARC1; p=reject; rua=mailto:username@domain.com```
 
 ### Email using Sub Domains
 
 * To use subdomain just add your subdomain prefix like for sub.domain.com just use sub after the host value. eg.
 
-    host for DMARC: _dmarc.sub
+   host for DMARC:```_dmarc.sub```
 
 If you have questions feel free to comment below.
