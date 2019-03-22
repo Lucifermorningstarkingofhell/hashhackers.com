@@ -1,5 +1,5 @@
 # Redirect domain aliases to primary domain
-https://tricksbystg.net/* https://www.hashhackers.com/:splat 301!
+https://tricksbystg.net/* https://tricksbystg.org/:splat 301!
 https://www.tricksbystg.net/* https://www.hashhackers.com/:splat 301!
 https://ssl.aaina.parveenbhadoo.com/* https://www.hashhackers.com/:splat 301!
 https://market.hashhackers.com/* https://www.hashhackers.com/:splat 301!
