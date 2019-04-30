@@ -12,6 +12,8 @@
 
 [Open Website](https://www.hashhackers.com)
 
+## Other Websites
+
 ![Website](https://img.shields.io/website/https/hashhackers.com.svg?down_message=HashHackers.com%20is%20Offline&style=for-the-badge&up_message=HashHackers.com%20is%20Online)
 
 ![Website](https://img.shields.io/website/https/cdn.hashhackers.com.svg?down_message=CDN.HashHackers.com%20is%20Offline&style=for-the-badge&up_message=CDN.HashHackers.com%20is%20Online)
@@ -25,3 +27,9 @@
 ![Website](https://img.shields.io/website/https/store.bhadoo.uk.svg?down_message=Store.Bhadoo.uk%20is%20Offline&style=for-the-badge&up_message=Store.Bhadoo.uk%20is%20Online)
 
 ![Website](https://img.shields.io/website/https/bhadoocloud.ga.svg?down_message=BhadooCloud.ga%20is%20Offline&style=for-the-badge&up_message=BhadooCloud.ga%20is%20Online)
+
+![Website](https://img.shields.io/website/https/wa.hashhackers.com.svg?down_message=wa.hashhackers.com%20is%20Offline&style=for-the-badge&up_message=wa.hashhackers.com%20is%20Online)
+
+![Website](https://img.shields.io/website/https/paytmpg.herokuapp.com.svg?down_message=paytmpg.herokuapp.com%20is%20Offline&style=for-the-badge&up_message=paytmpg.herokuapp.com%20is%20Online)
+
+![Website](https://img.shields.io/website/https/payupg.herokuapp.com.svg?down_message=payupg.herokuapp.com%20is%20Offline&style=for-the-badge&up_message=payupg.herokuapp.com%20is%20Online)
