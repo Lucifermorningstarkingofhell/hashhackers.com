@@ -1,10 +1,10 @@
 name = "Tools of Internet, Solutions and Software Downloads"
 description = "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's."
-homepage = "https://www.hashhackers.com/"
+homepage = "https://hashhackers.netlify.com/"
 tags = ["hash", "hashhackers", "hash hackers", "wordpress downloads", "software tutorials", "hashhackers.com"]
 features = []
 theme = "hugo-cards"
-baseurl = "https://www.hashhackers.com/"
+baseurl = "https://hashhackers.netlify.com/"
 languageCode = "en-us"
 title = "Tools of Internet, Solutions and Software Downloads"
 sitename = "Tools of Internet, Solutions and Software Downloads"
@@ -22,7 +22,7 @@ paginate = 45
   # use value for width="" and height=""
   logo_width          = "200px"
   logo_height         = "auto"
-  BaseURL             = "https://www.hashhackers.com/"
+  BaseURL             = "https://hashhackers.netlify.com/"
   images              = "/images/hashhackersbanner-min.jpg"
   keywords            = ["hash", "hashhackers", "hash hackers", "wordpress downloads", "software tutorials", "hashhackers.com"]
   description         = "Documentation, solutions on WordPress, Web Hosting, SEO and One Click Downloads for WordPress Themes, Plugins and Software's."
