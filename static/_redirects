@@ -1,8 +1,1 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
 
-# Redirect domain aliases to primary domain
-https://market.hashhackers.com/* https://www.hashhackers.com/:splat 301!
-https://aaina.hashhackers.ssl.bhadoo.industries/* https://www.hashhackers.com/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://hashhackers.netlify.com/* https://www.hashhackers.com/:splat 301!
